@@ -369,7 +369,7 @@ class HealthPlugin(private var channel: MethodChannel? = null) : MethodCallHandl
     if (dataType == DataType.TYPE_SLEEP_SEGMENT) {
       typesBuilder.accessSleepSessions(FitnessOptions.ACCESS_READ)
     }
-	//Log.i("FLUTTER_HEALTH::SUCCESS", "Hello!!!!!!!!!!")
+
     val fitnessOptions = typesBuilder.build()
     try {
       val googleSignInAccount =
